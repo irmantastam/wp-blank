@@ -1,0 +1,27 @@
+{
+  "name": "es6-blank",
+  "version": "1.0.0",
+  "description": "This is a blank Wordpress theme for front-end developers making their appearance of site and UI components from scratch. Theme is powered by Webpack module bundler and is designed to make developer's life easier. All you have to do is type npm run start in project folder and start coding with live linting by defined standarts, transpiling and build steps. Enjoy using it!",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irmantastam/es6-blank.git"
+  },
+  "keywords": [
+    "es6",
+    "sass",
+    "wordpress",
+    "webpack",
+    "babel",
+    "postcss"
+  ],
+  "author": "Irmantas Tamasauskas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irmantastam/es6-blank/issues"
+  },
+  "homepage": "https://github.com/irmantastam/es6-blank#readme"
+}
