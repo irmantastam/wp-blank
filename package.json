@@ -19,7 +19,7 @@
     "postcss"
   ],
   "author": "Irmantas Tamasauskas",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/irmantastam/es6-blank/issues"
   },
