@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  background-color: #fff;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="search"] {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::-moz-selection {
+  background-color: #04a4cc;
+  color: white;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #04a4cc;
+  color: white;
+  text-shadow: none;
+}

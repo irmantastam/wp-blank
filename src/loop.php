@@ -16,13 +16,13 @@
 			</time>
 		</span>
 		<span class="author"><?php _e( 'Published by', 'es6-blank' ); ?> <?php the_author_posts_link(); ?></span>
-		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Add comment', 'es6-blank' ), __( '1 Comment', 'es6-blank' ), __( '% Comments', 'es6-blank' )); ?></span>
-		<?php es6blank_excerpt('es6blank_index'); ?>
+		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Add comment', 'es-blank' ), __( '1 Comment', 'es-blank' ), __( '% Comments', 'es-blank' )); ?></span>
+		<?php esBlank_excerpt('esBlank_index'); ?>
 		<?php edit_post_link(); ?>
 	</article>
 <?php endwhile; ?>
 <?php else: ?>
 	<article>
-		<h2><?php _e( 'Sorry, nothing to display.', 'es6-blank' ); ?></h2>
+		<h2><?php _e( 'Sorry, nothing to display.', 'es-blank' ); ?></h2>
 	</article>
 <?php endif; ?>

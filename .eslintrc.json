@@ -1,0 +1,6 @@
+{
+  "extends": "eslint-config-airbnb",
+  "globals": {
+    "jQuery": true
+  }
+}

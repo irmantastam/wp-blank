@@ -19,5 +19,5 @@
           </div>
         </header>
         <nav class="nav" role="navigation">
-          <?php es6blank_nav(); ?>
+          <?php esBlank_nav(); ?>
         </nav>

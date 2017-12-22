@@ -1,4 +1,24 @@
-<h1> ES6-blank </h1>
-<h2> Blank Wordpress theme for front-end developers powered by Webpack </h2>
+<h1> ES-blank </h1>
+<h2> Blank easy to use Wordpress theme based on Webpack</h2>
 
-This is a blank Wordpress theme for front-end developers making their appearance of site and UI components from scratch. Theme is powered by Webpack module bundler and is designed to make developer's life easier. All you have to do is type npm run start in project folder and start coding with live linting by defined standarts, transpiling and build steps. Enjoy using it!
+If you want to build your Wordpress theme from scratch using modern day front-end standarts this is a right tool.
+Theme is designed to be as minimal as possible with freedom to modify it to the way you need. Use it as a starter
+for building custom UI.
+
+<h2> What's included? </h2>
+<ul>
+  <li><strong>Webpack</strong></li>
+  <li><strong>Babel</strong></li>
+  <li><strong>SASS</strong></li>
+  <li><strong>PostCSS</strong></li>
+  <li><strong>Stylelint</strong></li>
+  <li><strong>Eslint</strong></li>
+</ul>
+
+<h2> Getting started </h2>
+Clone this repository into your wordpress project themes directory.
+npm install
+npm run start
+
+It will build css and js bundles inside theme's /src/dist directory based on sources inside /src/js/main.js.
+Compiled bundles are already registered in theme's functions.php file so no additional configuration is needed!
