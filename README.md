@@ -16,9 +16,11 @@ for building custom UI.
 </ul>
 
 <h2> Getting started </h2>
-Clone this repository into your wordpress project themes directory.
-npm install
-npm run start
+* Clone this repository into your wordpress project themes directory (`.../wp-content/themes`).
+* In CLI, navigate to the theme's root directory (`.../wp-content/themes/es-blank`).
+* Execute the following commands:
+* `npm install`
+* `npm run start`
 
 It will build css and js bundles inside theme's /src/dist directory based on sources inside /src/js/main.js.
 Compiled bundles are already registered in theme's functions.php file so no additional configuration is needed!
