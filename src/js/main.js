@@ -2,6 +2,6 @@ require('../assets/styles/main.scss');
 
 (function main($) {
   $(() => {
-    // Main codes
+    // Include your main JS generic code here
   });
 }(jQuery));

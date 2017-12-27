@@ -1,24 +1,21 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-		<?php if ( has_post_thumbnail()) : ?>
+		<?php if (has_post_thumbnail()): ?>0
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-				<?php the_post_thumbnail(array(120,120)); ?>
+				<?php the_post_thumbnail(array(120, 120)); ?>
 			</a>
 		<?php endif; ?>
 		<h2>
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-		</h2>
+		</h2>		
+		<?php the_excerpt(); ?>
 		<span class="date">
 			<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
 				<?php the_date(); ?> <?php the_time(); ?>
 			</time>
 		</span>
-		<span class="author"><?php _e( 'Published by', 'es6-blank' ); ?> <?php the_author_posts_link(); ?></span>
+		<span class="author"><?php _e( 'by', 'es-blank' ); ?> <?php the_author_posts_link(); ?></span>
 		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Add comment', 'es-blank' ), __( '1 Comment', 'es-blank' ), __( '% Comments', 'es-blank' )); ?></span>
-		<?php esBlank_excerpt('esBlank_index'); ?>
-		<?php edit_post_link(); ?>
 	</article>
 <?php endwhile; ?>
 <?php else: ?>
