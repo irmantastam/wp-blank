@@ -14,12 +14,12 @@
         <?php the_date(); ?> <?php the_time(); ?>
       </time>
     </span>
-    <span class="author"><?php _e( 'by', 'es-blank' ); ?> <?php the_author_posts_link(); ?></span>
-    <span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Add comment', 'es-blank' ), __( '1 Comment', 'es-blank' ), __( '% Comments', 'es-blank' )); ?></span>
+    <span class="author"><?php _e('by', 'es-blank'); ?> <?php the_author_posts_link(); ?></span>
+    <span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __('Add comment', 'es-blank'), __('1 Comment', 'es-blank'), __('% Comments', 'es-blank')); ?></span>
   </article>
 <?php endwhile; ?>
 <?php else: ?>
   <article>
-    <h2><?php _e( 'Sorry, nothing to display.', 'es-blank' ); ?></h2>
+    <h2><?php _e('Sorry, nothing to display.', 'es-blank'); ?></h2>
   </article>
 <?php endif; ?>
