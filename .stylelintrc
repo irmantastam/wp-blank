@@ -1,4 +1,22 @@
 {
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "extend",
+        "function",
+        "include",
+        "mixin",
+        "return",
+        "content",
+        "for",
+        "else",
+        "if"
+      ]
+    }],
+  },
   "extends": [
     "stylelint-config-standard"
   ],
