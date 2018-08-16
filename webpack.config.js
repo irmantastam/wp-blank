@@ -1,25 +1,33 @@
-var StyleLintPlugin = require('stylelint-webpack-plugin');
-var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var path = require('path');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const postcssSVG = require('postcss-svg');
+const postcssInlineSVG = require('postcss-inline-svg');
+const postcssCalc = require('postcss-calc');
 
 module.exports = {
   entry: {
-    bundle: './src/js/main.js',
+    'bundle.js': './src/js/main.js',
+    'bundle.css': './src/assets/styles/main.scss',
   },
   output: {
-    filename: '[name].js',
-    path: __dirname + '/src/dist',
+    filename: '[name]',
+    path: `${__dirname}/dist`,
+  },
+  devtool: 'source-map',
+  resolve: {
+    modules: [path.resolve(__dirname, 'src/components'), 'node_modules'],
   },
   module: {
     rules: [
       {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         exclude: [
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
           /\.json$/,
-          /\.svg$/,
           /\.scss$/,
           /\.md$/,
         ],
@@ -46,13 +54,6 @@ module.exports = {
         },
       },
       {
-        test: /\.svg$/,
-        loader: 'file-loader',
-        options: {
-          name: 'static/media/[name].[hash:8].[ext]',
-        },
-      },
-      {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
@@ -61,27 +62,30 @@ module.exports = {
             {
               loader: 'postcss-loader',
               options: {
-                ident: 'postcss',
                 sourceMap: true,
-                plugins: function() {
-                  return [
-                    autoprefixer({
-                      browsers: [
-                        '>1%',
-                        'last 4 versions',
-                        'Firefox ESR',
-                        'not ie < 9',
-                      ]
-                    }),
-                    require('postcss-calc'),
-                    require('postcss-inline-svg')({
-                      path: __dirname + '/src/assets/images',
-                    }),
-                  ];
-                },
+                ident: 'postcss',
+                plugins: () => [
+                  autoprefixer({
+                    browsers: [
+                      '>1%',
+                      'last 4 versions',
+                      'Firefox ESR',
+                      'not ie < 9',
+                    ],
+                  }),
+                  postcssCalc,
+                  postcssInlineSVG({
+                    path: `${__dirname}/src/images/icons`,
+                  }),
+                  postcssSVG({
+                    paths: [`${__dirname}/src/images/icons`],
+                  }),
+                ],
               },
             },
-            'sass-loader?sourceMap',
+            {
+              loader: 'sass-loader?sourceMap',
+            },
           ],
         }),
       },
@@ -91,9 +95,7 @@ module.exports = {
     new StyleLintPlugin({
       files: '**/*.scss',
       failOnError: false,
-      configFile: './.stylelintrc',
     }),
-    new ExtractTextPlugin('[name].css'),
+    new ExtractTextPlugin('[name]'),
   ],
 };
-
