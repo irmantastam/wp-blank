@@ -18,4 +18,16 @@ add_theme_support('title-tag');
 add_action('wp_enqueue_scripts', 'loadStyles');
 add_action('wp_enqueue_scripts', 'loadScripts');
 
+if (function_exists('register_sidebar')) {
+	register_sidebar(array(
+		'name' => 'Sidebar',
+		'id'   => 'sidebar-1',
+		'description'   => 'Add widgets here to appear in your sidebar.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+  ));
+}
+
 ?>
