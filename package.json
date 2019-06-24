@@ -48,7 +48,7 @@
     "postcss-calc": "5.3.1",
     "postcss-inline-svg": "2.2.0",
     "postcss-loader": "^2.1.6",
-    "postcss-svg": "1.0.4",
+    "postcss-svg": "^3.0.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "stylelint": "^9.10.1",
