@@ -6,6 +6,8 @@
   for building custom UI.
 </p>
 
+![Ecma script 6](/src/screenshot.png?raw=true "Blank wordpress theme for development from scratch")
+
 <h2> What's included? </h2>
 <ul>
   <li><strong>Webpack</strong></li>
@@ -18,15 +20,16 @@
 
 ## Getting Started
 
-* Clone this repository into your wordpress project themes directory (`.../wp-content/themes`).
-* In CLI, navigate to the theme's root directory (`.../wp-content/themes/es-blank`).
+* Clone this repository into your wordpress project themes directory `.../wp-content/themes`.
+* Navigate to the theme's root directory `.../wp-content/themes/es-blank`.
 * Execute the following commands:
 * `npm install`
-* `npm run start`
+* `npm run watch` - to activate development mode.
+* `npm run build` - to build production bundles.
 
 ## The build
 <p>
-  It will build css and js bundles inside theme's <code>`/src/dist`</code> directory based on sources inside <code>`/src/js/main.js`</code>.
+  It will build css and js bundles into theme's <code>/src/dist</code> directory based on sources inside <code>/src/js/main.js</code> for javascript and <code>/src/assets/styles/main.scss</code> for styles.
   Compiled bundles are already registered in theme's functions.php file so no additional configuration is needed!
   You can modify templates for your own projects in a way you need and start focusing on building your theme imediately.
 </p>
