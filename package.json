@@ -1,5 +1,5 @@
 {
-  "name": "es-blank",
+  "name": "wp-blank",
   "version": "1.0.0",
   "description": "Blank Wordpress theme based on Webpack",
   "main": "index.js",
@@ -14,9 +14,10 @@
   },
   "keywords": [
     "wordpress",
-    "html5",
-    "es6",
+    "html",
+    "javascript",
     "sass",
+    "css",
     "postcss",
     "webpack",
     "babel"
