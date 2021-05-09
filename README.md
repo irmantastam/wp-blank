@@ -1,4 +1,4 @@
-<h1> ES-blank </h1>
+<h1> WP-blank </h1>
 <h2> Blank easy to use Wordpress theme based on Webpack</h2>
 <p>
   If you want to build your Wordpress theme from scratch using modern day front-end standarts this is a right tool.
