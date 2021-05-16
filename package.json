@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/irmantastam/es-blank.git"
+    "url": "git+https://github.com/irmantastam/wp-blank.git"
   },
   "keywords": [
     "wordpress",
@@ -25,9 +25,9 @@
   "author": "Irmantas Tamasauskas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/irmantastam/es-blank/issues"
+    "url": "https://github.com/irmantastam/wp-blank/issues"
   },
-  "homepage": "https://github.com/irmantastam/es-blank#readme",
+  "homepage": "https://github.com/irmantastam/wp-blank#readme",
   "devDependencies": {
     "autoprefixer": "6.5.3",
     "babel-core": "^6.26.3",
