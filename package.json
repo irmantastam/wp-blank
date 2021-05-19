@@ -1,7 +1,7 @@
 {
   "name": "wp-blank",
   "version": "1.0.0",
-  "description": "Blank WordPress theme for building custom front-end",
+  "description": "Blank Wordpress theme for building custom front-end",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --colors --watch --mode development",
