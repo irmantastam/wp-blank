@@ -1,7 +1,7 @@
 {
   "name": "wp-blank",
   "version": "1.0.0",
-  "description": "Blank Wordpress theme based on Webpack",
+  "description": "Blank WordPress theme for building custom front-end",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --colors --watch --mode development",
@@ -22,7 +22,7 @@
     "webpack",
     "babel"
   ],
-  "author": "Irmantas Tamasauskas",
+  "author": "Irmantas Tamašauskas",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/irmantastam/wp-blank/issues"
