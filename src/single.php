@@ -17,18 +17,18 @@
             <?php the_date(); ?> <?php the_time(); ?>
           </time>
         </span>
-        <span class="author"><?php esc_html_e('Post by', 'wp-blank' ); ?> <?php the_author_posts_link(); ?></span>
-        <span class="comments"><?php if (comments_open(get_the_ID())) comments_popup_link(__('Leave your thoughts', 'wp-blank'), __('1 Comment', 'wp-blank'), __('% Comments', 'wp-blank')); ?></span>
+        <span class="author"><?php esc_html_e('Post by', 'WP-blank' ); ?> <?php the_author_posts_link(); ?></span>
+        <span class="comments"><?php if (comments_open(get_the_ID())) comments_popup_link(__('Leave your thoughts', 'WP-blank'), __('1 Comment', 'WP-blank'), __('% Comments', 'WP-blank')); ?></span>
         <?php the_content(); ?>
-        <?php the_tags(__('Tags: ', 'wp-blank' ), ', ', '<br>');?>
-        <p><?php esc_html_e('Category: ', 'wp-blank'); the_category(', '); ?></p>
-        <p><?php esc_html_e('Post written by ', 'wp-blank'); the_author(); ?></p>
+        <?php the_tags(__('Tags: ', 'WP-blank' ), ', ', '<br>');?>
+        <p><?php esc_html_e('Category: ', 'WP-blank'); the_category(', '); ?></p>
+        <p><?php esc_html_e('Post written by ', 'WP-blank'); the_author(); ?></p>
         <?php comments_template(); ?>
       </article>
     <?php endwhile; ?>
     <?php else : ?>
       <article>
-        <h1><?php esc_html_e( 'Sorry, nothing to display.', 'wp-blank' ); ?></h1>
+        <h1><?php esc_html_e( 'Sorry, nothing to display.', 'WP-blank' ); ?></h1>
       </article>
     <?php endif; ?>
   </section>

@@ -1,5 +1,5 @@
 {
-  "name": "wp-blank",
+  "name": "WP-blank",
   "version": "1.0.0",
   "description": "Blank Wordpress theme for building custom front-end",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/irmantastam/wp-blank.git"
+    "url": "git+https://github.com/irmantastam/WP-blank.git"
   },
   "keywords": [
     "wordpress",
@@ -25,9 +25,9 @@
   "author": "Irmantas Tamašauskas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/irmantastam/wp-blank/issues"
+    "url": "https://github.com/irmantastam/WP-blank/issues"
   },
-  "homepage": "https://github.com/irmantastam/wp-blank#readme",
+  "homepage": "https://github.com/irmantastam/WP-blank#readme",
   "devDependencies": {
     "autoprefixer": "6.5.3",
     "babel-core": "^6.26.3",
