@@ -1,4 +1,4 @@
-<h1> WP-blank </h1>
+<h1> wp-blank </h1>
 <h2> Blank Wordpress theme for building custom front-end</h2>
 <p>
   If you want to build your Wordpress theme from scratch using your own HTML, CSS and Javascript, this is a right tool.
@@ -6,7 +6,7 @@
   for building custom front-end architecture of your project.
 </p>
 
-![Wordpress logo](/src/screenshot.png "WP-blank Wordpress theme")
+![Wordpress logo](/src/screenshot.png "wp-blank Wordpress theme")
 
 <h2> What's included? </h2>
 <ul>
@@ -21,7 +21,7 @@
 ## Getting Started
 
 * Clone this repository into your Wordpress project themes directory `.../wp-content/themes`.
-* Navigate to the theme's root directory `.../wp-content/themes/WP-blank`.
+* Navigate to the theme's root directory `.../wp-content/themes/wp-blank`.
 * Execute the following commands:
 * `npm install`
 * `npm run watch` - to watch for file changes and compile them on each save.

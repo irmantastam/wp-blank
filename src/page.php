@@ -11,7 +11,7 @@
       <?php endwhile; ?>
       <?php else: ?>
         <article>
-          <h2><?php _e('Sorry, nothing to display.', 'WP-blank'); ?></h2>
+          <h2><?php _e('Sorry, nothing to display.', 'wp-blank'); ?></h2>
         </article>
       <?php endif; ?>
     </section>
