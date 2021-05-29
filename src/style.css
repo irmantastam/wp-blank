@@ -3,7 +3,7 @@ Theme Name: wp-blank
 Theme URI: https://github.com/irmantastam/wp-blank
 Author: Irmantas Tamašauskas
 Author URI: https://github.com/irmantastam
-Description: Blank Wordpress theme for building custom front-end.
+Description: Blank WordPress theme for building custom front-end.
 Version: 1.0
 Requires PHP: 7.3
 License: MIT
@@ -13,6 +13,6 @@ Text Domain: wp-blank
 */
 
 /*
-This CSS file is needed for Wordpress to recognize the theme and display its info.
+This CSS file is needed for WordPress to recognize the theme and display its info.
 Please use the ../src/assets/styles/main.scss as an entry point for your SASS code.
 */
