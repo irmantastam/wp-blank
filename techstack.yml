@@ -2,7 +2,7 @@ repo_name: irmantastam/wp-blank
 report_id: beaae42609db4bf02de85048561ff1fa
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-03T11:18:54+00:00'
+timestamp: '2024-01-05T08:11:17+00:00'
 requested_by: irmantastam
 provider: github
 branch: master
@@ -16,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/irmantastam/wp-blank
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -26,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/irmantastam/wp-blank
   detection_source: Repo Metadata
 - name: PHP
   description: A popular general-purpose scripting language that is especially suited
@@ -36,6 +38,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg
+  detection_source_url: https://github.com/irmantastam/wp-blank
   detection_source: Repo Metadata
 - name: Autoprefixer
   description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
@@ -45,6 +48,7 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/irmantastam/wp-blank/blob/master/package.json
   detection_source: package.json
   last_updated_by: Irmantas Tamasauskas
   last_updated_on: 2018-08-16 13:33:41.000000000 Z
@@ -57,6 +61,7 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source_url: https://github.com/irmantastam/wp-blank/blob/master/package.json
   detection_source: package.json
   last_updated_by: Irmantas Tamasauskas
   last_updated_on: 2017-01-07 16:40:45.000000000 Z
@@ -69,6 +74,7 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/8074/default_d2b16fd6997fb2e164de645a34f9b8d5a880d999.png
+  detection_source_url: https://github.com/irmantastam/wp-blank/blob/master/package.json
   detection_source: package.json
   last_updated_by: Irmantas Tamasauskas
   last_updated_on: 2019-06-24 11:06:46.000000000 Z
@@ -95,6 +101,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/irmantastam/wp-blank/blob/master/package.json
   detection_source: package.json
   last_updated_by: Irmantas Tamasauskas
   last_updated_on: 2017-01-07 16:40:45.000000000 Z
@@ -106,6 +113,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/irmantastam/wp-blank
   detection_source: Repo Metadata
 - name: Stylelint
   description: A mighty, modern CSS linter
@@ -143,6 +151,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/irmantastam/wp-blank/blob/master/package.json
   detection_source: package.json
   last_updated_by: Irmantas Tamasauskas
   last_updated_on: 2017-01-07 16:40:45.000000000 Z
